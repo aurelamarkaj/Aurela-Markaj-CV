@@ -11,9 +11,22 @@ export default function Header(){
                         <li><Link href="/about" className="hover:text-accent">About</Link></li>
                         <li><Link href="/skills" className="hover:text-accent">Skills</Link></li>
                         <li><Link href="/experience" className="hover:text-accent">Experience</Link></li>
-                        <li><Link href="/projects"</li>
+                        <li><Link href="/projects" className="hover:text-accent">Projects</Link></li>
+                        <li><Link href="/contact" className="hover:text-accent">Contact</Link></li>
                     </ul>
                 </nav>
+                <div className="md:hidden">
+                    <details>
+                        <summary className="cursor-pointer">Menu</summary>
+                        <div className="flex flex-com mt-2">
+                            <Link href="/about" className="py-1">About</Link>
+                            <Link href="/skills" className="py-1">Skills</Link>
+                            <Link href="/experience" className="py-1">Experience</Link>
+                            <Link href="/projects" className="py-1">Projects</Link>
+                            <Link href="/contact" className="py-1">Contact</Link>
+                        </div>
+                    </details>
+                </div>
             </div>
         </header>
     )
